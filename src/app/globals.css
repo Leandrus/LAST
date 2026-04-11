@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Style Guide: Dark Theme First */
+    --background: #0A0A0A; /* Negro Mate / Eerie Black */
+    --foreground: #EDEDED; /* Texto Primario */
+    
+    --surface: rgba(26, 26, 26, 0.7); /* Superficies con Glassmorphism */
+    
+    --primary: #E67817; /* Acento Primario (Naranja Eléctrico) */
+    --primary-foreground: #FFFFFF;
+    
+    --secondary: #09488f; /* Acento Secundario (Azul Cobalto) */
+    --secondary-foreground: #FFFFFF;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: #A1A1AA; /* Texto Secundario */
+
+    --accent: #E67817;
+    --accent-foreground: #FFFFFF;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+
+    --radius: 0.5rem; /* 8px para un look profesional y serio */
+  }
+
+  .dark {
+    --background: #0A0A0A;
+    --foreground: #EDEDED;
+    
+    --surface: rgba(26, 26, 26, 0.7);
+    
+    --primary: #E67817;
+    --primary-foreground: #FFFFFF;
+    
+    --secondary: #09488f;
+    --secondary-foreground: #FFFFFF;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: #A1A1AA;
+
+    --accent: #E67817;
+    --accent-foreground: #FFFFFF;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-[var(--background)] text-[var(--foreground)] font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-surface backdrop-blur-md border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)];
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+  }
+}
