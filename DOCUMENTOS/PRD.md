@@ -2,6 +2,7 @@
 
 ## 1. Visión del Proyecto
 Crear una plataforma SPA (Single Page Application) de alto rendimiento para Team LAST. La web debe combinar la nostalgia de sus raíces en LFS con la modernidad del simracing actual, funcionando como portal público y centro de operaciones interno.
+Como apoyo a la informacion sobre el equipo, utilizar la informacion del archivo @/RECURSOS/INFO_TEAM_LAST.md
 
 ## 2. Objetivos Principales
 - **Velocidad Extrema:** Arquitectura SPA para transiciones instantáneas sin recargas de página.

@@ -21,9 +21,13 @@
 - **Animaciones:** Transiciones sutiles de `0.5s` en la carga de vistas de la SPA.
 
 ## 5. Iconografía
-- **Fuente:** Lucide (Líneas finas, estilo técnico).
+- **Fuente:** FontAwesome (Líneas finas, estilo técnico).
 - **Uso:** Iconos de navegación, estados de telemetría y botones de acción.
 
 ## 6. Logotipo
 - **Imagen:** Utilizar imagen en @/RECURSOS/LAST_LOGO.png
 
+## 7. Gráficos
+- **Librería:** Chart.js
+- **Estilo:** Minimalista, con colores de la paleta definida.
+- **Animaciones:** Transiciones sutiles de `0.5s` en la carga de vistas de la SPA.
