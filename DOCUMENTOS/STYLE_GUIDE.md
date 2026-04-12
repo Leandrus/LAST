@@ -1,20 +1,29 @@
 # Style Guide: Team LAST Visual Identity
 
 ## 1. Concepto Visual
-"Epic Heritage meets High-Tech". El diseño debe sentirse como una cabina de simulación de alta gama o una marca de relojería técnica.
+"Epic Heritage meets High-Tech". Inspiración en telemetría de competición y marcas de lujo técnico.
 
-## 2. Paleta de Colores (Dark Theme First)
-- **Fondo:** `#0A0A0A` (Negro Mate / Eerie Black).
-- **Superficies:** `#1A1A1A` con opacidad (Glassmorphism).
-- **Acento (Primario):** `#E67817` - Usar para estados de hover, bordes finos y CTAs.
-- **Acento (Secundario):** `#09488f` Usar para fondos secudarios de secciones, formularios y bordes.
-- **Texto:** `#EDEDED` (Primario), `#A1A1AA` (Secundario).
+## 2. Paleta de Colores (Variables CSS)
+- `--bg-dark`: `#0A0A0A` (Fondo principal).
+- `--surface-glass`: `rgba(26, 26, 26, 0.7)` (Efecto cristal con desenfoque).
+- `--brand-orange`: `#E67817` (Acento dinámico).
+- `--brand-blue`: `#09488f` (Identidad institucional).
+- `--text-primary`: `#EDEDED`.
+- `--text-secondary`: `#A1A1AA`.
 
 ## 3. Tipografía
-- **Títulos:** Una fuente Serif elegante y moderna (ej: Playfair Display o una Slab Serif técnica) para evocar historia.
-- **Cuerpo/Datos:** Una Sans-Serif geométrica (ej: Inter o Roboto Mono para datos de telemetría).
+- **Títulos:** Serif elegante (ej: Playfair Display) para denotar legado y veteranía.
+- **Cuerpo/Datos:** Sans-serif geométrica (ej: Inter) para claridad técnica.
 
-## 4. UI Elements
-- **Bordes:** Radios pequeños (8px) para un look más serio y técnico.
-- **Efectos:** Glassmorphism sutil, gradientes lineales oscuros, y transiciones de 0.5s en interacciones.
-- **Iconografía:** Lucide React (líneas finas).
+## 4. Elementos de UI
+- **Efectos:** `backdrop-filter: blur(12px)` para paneles y menús flotantes.
+- **Bordes:** `border-radius: 8px` con bordes finos de `1px` en `--brand-blue` o `--brand-orange`.
+- **Animaciones:** Transiciones sutiles de `0.5s` en la carga de vistas de la SPA.
+
+## 5. Iconografía
+- **Fuente:** Lucide (Líneas finas, estilo técnico).
+- **Uso:** Iconos de navegación, estados de telemetría y botones de acción.
+
+## 6. Logotipo
+- **Imagen:** Utilizar imagen en @/RECURSOS/LAST_LOGO.png
+
