@@ -160,6 +160,36 @@
 
   /* Header */
 
+  .logo-container {
+    position: fixed;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+
+    /* Dimensiones fijas solicitadas */
+    width: 268px;
+    height: 277px;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    /* Imagen de fondo */
+    background-image: url("../images/banderin.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Centrado del contenido (el logo) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Estética */
+    text-decoration: none;
+  }
+
   @media screen and (max-width: 1050px) {
     .main-header .logo {
       padding-left: 30px !important;
@@ -202,8 +232,12 @@
   }
 
   .main-menu {
-    float: right;
+    /*
+    float: center;
     padding-right: 60px;
+    */
+    margin: auto;
+    text-align: center
   }
 
   .main-menu li {
@@ -386,6 +420,14 @@
       font-size: 36px;
     }
 
+  }
+
+  .main-logo {
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:200px;
+    object-fit:contain;
   }
 
 
