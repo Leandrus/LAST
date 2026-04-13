@@ -31,3 +31,8 @@
 - **Librería:** Chart.js
 - **Estilo:** Minimalista, con colores de la paleta definida.
 - **Animaciones:** Transiciones sutiles de `0.5s` en la carga de vistas de la SPA.
+
+# Ejemplos de otros equipos:
+- https://coanda.gg/
+- https://www.bscompetition.com/
+
