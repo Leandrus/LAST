@@ -960,8 +960,68 @@ section.courses .owl-carousel button.active {
   background-color: var(--brand-orange);
 }
 
+section.courses .miembros-activos {
+  display: block;
+}
+
+section.courses .miembros-retirados {
+  display: none;
+}
 
 
+/* History */
+
+section.history {
+  /*
+  background-image: url(../images/bg-history.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  */
+  background-color: var(--bg-dark);
+  padding: 120px 0px;
+}
+
+section.history .left-content {
+  color: #fff;
+}
+
+section.history .left-content span {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+section.history .left-content h4 {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+section.history .left-content h4 em {
+  font-style: normal;
+  color: var(--brand-orange);
+}
+
+section.history .left-content .main-button {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+
+  section.history .left-content {
+    margin-bottom: 45px;
+  }
+
+  section.history .first-item .first-content h4,
+  section.history .second-item .second-content h4 {
+    text-align: center;
+  }
+
+}
 
 
 /* Video */
