@@ -15,31 +15,44 @@
 	videoPopup();
 
 
-	$('.owl-carousel').owlCarousel({
-	    loop:true,
-	    margin:30,
-	    nav:true,
-	    autoplay:true,
-		autoplayTimeout:5000,
-		autoplayHoverPause:true,
-	    responsive:{
-	        0:{
-	            items:1
-	        },
-	        550:{
-	            items:2
-	        },
-	        750:{
-	            items:3
-	        },
-	        1000:{
-	            items:4
-	        },
-	        1200:{
-	            items:5
-	        }
-	    }
-	})
+	$('.owl-carousel').each(function() {
+		var $carousel = $(this);
+		
+		if ($carousel.hasClass('miembros-activos') || $carousel.hasClass('miembros-retirados')) {
+			var divs = $carousel.children().get();
+			divs.sort(function() {
+				return 0.5 - Math.random();
+			});
+			$(divs).appendTo($carousel);
+		}
+
+		var itemCount = $carousel.children().length;
+		$carousel.owlCarousel({
+			loop: itemCount > 5, 
+			margin:30,
+			nav:true,
+			autoplay:true,
+			autoplayTimeout:5000,
+			autoplayHoverPause:true,
+			responsive:{
+				0:{
+					items:1
+				},
+				550:{
+					items:2
+				},
+				750:{
+					items:3
+				},
+				1000:{
+					items:4
+				},
+				1200:{
+					items: 5
+				}
+			}
+		});
+	});
 
 
 	$(".Modern-Slider").slick({

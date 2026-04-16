@@ -872,6 +872,103 @@ section.coming-soon form button {
 }
 
 
+/* Team Members */
+
+section.members {
+  background-image: url(../images/bg_members.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--bg-dark);
+  padding-bottom: 100px;
+  padding: 0px 30px 100px 30px;
+}
+
+section.members .item img {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+section.members .item .down-content {
+  padding: 30px;
+  background-color: #fff;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #1e1e1e;
+}
+
+section.members .item .down-content h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #1e1e1e;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+section.members .item .down-content p {
+  margin-bottom: 25px;
+}
+
+section.members .item .down-content img {
+  width: 40px;
+  border: 2px solid var(--brand-orange);
+  border-radius: 50%;
+  text-align: left;
+  display: inline-block;
+}
+
+section.members .item .down-content .text-button-pay {
+  /*float: right;*/
+  display: inline-block;
+  margin-top: -30px;
+}
+
+section.members .item .down-content .text-button-pay a {
+  color: var(--brand-orange);
+  font-size: 13px;
+}
+
+section.members .item .down-content .text-button-free {
+  /*float: right;*/
+  display: inline-block;
+  margin-top: -30px;
+}
+
+section.members .item .down-content .text-button-free a {
+  color: #7a7a7a;
+  font-size: 13px;
+}
+
+section.members .owl-carousel .owl-nav {
+  display: none;
+}
+
+section.members .owl-carousel .owl-dots {
+  text-align: center;
+}
+
+section.members .owl-carousel button.owl-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  margin: 50px 10px 0px 10px;
+  outline: none;
+}
+
+section.members .owl-carousel button.active {
+  background-color: var(--brand-orange);
+}
+
+section.members .miembros-activos {
+  display: block;
+}
+
+section.members .miembros-retirados {
+  display: none;
+}
+
+/* Team Members - END */
 
 /* Courses */
 
@@ -894,6 +991,7 @@ section.courses .item .down-content {
   background-color: #fff;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+  color: #1e1e1e;
 }
 
 section.courses .item .down-content h4 {
@@ -960,14 +1058,7 @@ section.courses .owl-carousel button.active {
   background-color: var(--brand-orange);
 }
 
-section.courses .miembros-activos {
-  display: block;
-}
-
-section.courses .miembros-retirados {
-  display: none;
-}
-
+/* Courses - END */
 
 /* History */
 
