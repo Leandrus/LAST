@@ -71,6 +71,31 @@
 		}
 	});
 
+	// Permitir hacer clic en los patrocinadores para centrarlos
+	$partnersCarousel.on('click', '.owl-item', function () {
+		var $item = $(this).find('.item');
+		var targetSponsorId = $item.data('sponsor-id');
+		var originalItems = $partnersCarousel.find('.owl-item').not('.cloned').find('.item');
+		var targetIndex = -1;
+
+		originalItems.each(function (i) {
+			if ($(this).data('sponsor-id') === targetSponsorId) {
+				targetIndex = i;
+				return false;
+			}
+		});
+
+		if (targetIndex !== -1) {
+			$partnersCarousel.trigger('to.owl.carousel', [targetIndex, 300, true]);
+		}
+	});
+
+	// Mostrar un cursor de puntero para indicar interactividad
+	$partnersCarousel.on('mouseenter', '.owl-item', function() {
+		$(this).css('cursor', 'pointer');
+	});
+
+
 	$(".Modern-Slider").slick({
 		autoplay: true,
 		autoplaySpeed: 10000,
