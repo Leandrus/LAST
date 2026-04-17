@@ -8,10 +8,10 @@
 }
 
 @import url(fontawesome.css);
-@import url("https: //fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+@import url("https: //fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cookie&display=swap");
 
 body {
-  font-family: var(--font-body, 'Inter', sans-serif);
+  font-family: var(--font-body, 'Inter', sans-serif, 'Cookie');
 }
 
 /* Basic */
@@ -2017,7 +2017,7 @@ h4,
 h5,
 h6,
 .section-heading h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'inter', 'Playfair Display', serif, 'Cookie';
 }
 
 body {
@@ -2215,23 +2215,23 @@ body {
 
 @media screen and (max-width: 767px) {
   .pilot-info-top .real-name {
-    font-size: 2rem;
-  }
-
-  .pilot-info-top .bio-data {
     font-size: 1.5rem;
   }
 
+  .pilot-info-top .bio-data {
+    font-size: 1.2rem;
+  }
+
   .social-links a {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .team-item .team-name h5 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .pilot-info-top .bio-data img {
-    width: 96px;
+    width: 48px;
     height: auto;
   }
 }
