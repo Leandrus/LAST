@@ -184,9 +184,20 @@ a.menu-link {
 }
 
 .main-header .logo {
-  float: left;
-  line-height: 80px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   padding-left: 60px;
+  line-height: normal;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.main-header .logo.show-logo {
+  opacity: 1;
+  visibility: visible;
 }
 
 .main-header .logo a {

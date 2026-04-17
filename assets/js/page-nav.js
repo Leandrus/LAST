@@ -48,3 +48,21 @@ $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
 $(window).scroll(function () {
   checkSection();
 });
+
+// Header logo visibility toggle
+$(document).ready(function() {
+  var headerLogo = $('.header-logo');
+  var mainLogo = $('.main-logo')[0]; 
+  
+  if (mainLogo && headerLogo.length > 0) {
+    var observer = new IntersectionObserver(function(entries) {
+      if(entries[0].isIntersecting) {
+        headerLogo.removeClass('show-logo');
+      } else {
+        headerLogo.addClass('show-logo');
+      }
+    }, { threshold: [0] });
+    
+    observer.observe(mainLogo);
+  }
+});
