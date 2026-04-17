@@ -1,0 +1,1155 @@
+<!--
+  =============================================================
+  LAST : Latin American Simracing Team - Official Website
+  =============================================================
+  Estructura General:
+  - Header & Navegación (Sticky y animado)
+  - Banner Principal (Video en background)
+  - Area de Simuladores (Destacados LFS, AC, iRacing)
+  - Historia (Legado y nueva era)
+  - Miembros del Equipo (Grilla dinámica filtrable)
+  - Patrocinadores / Partners (Carrusel interactivo y paneles dinámicos)
+  - Contacto y Redes (Accesos rápidos orientados)
+  =============================================================
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Team LAST - Latin American Simracing Team">
+  <meta name="author" content="Team LAST">
+
+
+  <!-- Fonts: Inter and Playfair Display -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cookie&display=swap"
+    rel="stylesheet">
+
+  <title>LAST : Latin American Simracing Team</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/team-last.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+</head>
+
+<body>
+  <!--header-->
+  <header class="main-header removed_clearfix" role="header">
+    <!-- Logo top izquierdo del menu -->
+    <div class="logo header-logo hidden">
+      <a href="#"><img src="assets/images/logo_last.png" width="auto" height="60px" alt="LAST"></a>
+    </div> <!-- Menu for mobile -->
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+
+    <!--Menu for desktop -->
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="#section1">Inicio</a></li>
+        <li><a href="#section2">Historia</a></li>
+        <li><a href="#section3">Equipo</a></li>
+        <li><a href="#section4">Patrocinios</a></li>
+        <li><a href="#section5">Contacto</a></li>
+        <li><a href="#section6">Redes</a></li>
+
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+    <video autoplay muted loop id="bg-video">
+      <source src="assets/images/fzr-video.mp4" type="video/mp4" />
+    </video>
+
+    <div class="video-overlay header-text">
+      <div class="caption">
+
+        <img src="assets/images/logo_last.png" class="main-logo" alt="LAST">
+        <P class="big-name">Latin American Simracing
+          Team</P>
+        <div class="main-button">
+          <div class="scroll-to-section"><a href="#section2">Aceleremos juntos</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+
+  <!-- ***** Simulators Area ***** -->
+  <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="features-post">
+            <div class="features-content">
+              <div class="content-show">
+                <img src="assets/images/sim_logo_lfs.svg" alt="Live For Speed" />
+              </div>
+              <div class=" content-hide">
+                <p>Un veterano independiente que prioriza sensaciones sobre gráficos. Sus físicas de neumáticos son
+                  legendarias, ofreciendo una conducción pura y orgánica que ha mantenido a una comunidad fiel durante
+                  décadas de desarrollo.</p>
+                <p class="hidden-sm">Un veterano independiente que prioriza sensaciones sobre gráficos. Sus físicas de
+                  neumáticos son
+                  legendarias, ofreciendo una conducción pura y orgánica que ha mantenido a una comunidad fiel durante
+                  décadas de desarrollo.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post second-features">
+            <div class="features-content">
+              <div class="content-show">
+                <img src="assets/images/sim_logo_ac.svg" alt="Assetto Corsa" />
+              </div>
+              <div class="content-hide">
+                <p>La navaja suiza del simracing. Destaca por su equilibrio entre realismo y una comunidad de modding
+                  inagotable que permite conducir casi cualquier coche en cualquier pista, personalizando la experiencia
+                  al máximo.</p>
+                <p class="hidden-sm">La navaja suiza del simracing. Destaca por su equilibrio entre realismo y una
+                  comunidad de modding
+                  inagotable que permite conducir casi cualquier coche en cualquier pista, personalizando la experiencia
+                  al máximo.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post third-features">
+            <div class="features-content">
+              <div class="content-show">
+
+                <img src="assets/images/sim_logo_iracing.svg" alt="iRacing" />
+              </div>
+              <div class="content-hide">
+                <p>El estándar de oro para la competición online. Con su estricto sistema de licencias, ofrece las
+                  carreras más organizadas y profesionales del mercado, enfocándose totalmente en el realismo y el
+                  espíritu deportivo.</p>
+                <p class="hidden-sm">El estándar de oro para la competición online. Con su estricto sistema de
+                  licencias, ofrece las
+                  carreras más organizadas y profesionales del mercado, enfocándose totalmente en el realismo y el
+                  espíritu deportivo.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Simulators Area End ***** -->
+
+  <!-- ***** Team History ***** -->
+  <section class="section history" data-section="section2">
+    <div class="container">
+      <div class="row section-header-row">
+        <div class="col-md-12">
+          <div class="section-heading mt-0" class="custom-section-heading">
+            <h2>Nuestra Historia</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <div class="left-content">
+            <span>El Resurgimiento de una Leyenda</span>
+            <h4>Forjando un nuevo futuro sobre los cimientos de nuestra historia.</h4>
+            <p>Nacimos en el asfalto virtual de <a href="https://www.lfs.net/" target="_blank">Live For
+                Speed</a>, en una época
+              donde la competición se definía
+              por el instinto puro y la búsqueda incansable de la perfección técnica en cada trazada. Durante años, Team
+              LAST se consolidó como un referente de constancia y velocidad, construyendo una identidad inquebrantable
+              basada en la ingeniería del detalle y la hermandad de sus pilotos. Aquellos kilómetros forjaron un legado
+              que hoy sirve como combustible para nuestra nueva etapa.
+            </p>
+            <p>Esa energía legendaria resurge hoy con una visión renovada y una infraestructura de vanguardia, preparada
+              para conquistar los circuitos de <a href="https://assettocorsa.gg/" target="_blank">Assetto Corsa</a>, <a
+                href="https://www.iracing.com/" target="_blank">iRacing</a> y las plataformas más exigentes del
+              automovilismo virtual contemporáneo. Regresamos al asfalto con la elegancia de nuestra veteranía y la
+              potencia de las nuevas tecnologías, integrando análisis de telemetría avanzada y una estructura
+              profesional que honra nuestro pasado mientras aceleramos hacia una nueva era de gloria.</p>
+            <div class="main-button">
+
+              <div class="scroll-to-section"><a href="#section3">Integrantes del equipo</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <article class="video-item">
+
+            <figure>
+              <img src="assets/images/bg-history.jpg" class="play" />
+            </figure>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Team History End ***** -->
+
+  <!-- ***** Team Members Profiles ***** -->
+  <section class="section members" data-section="section3">
+    <div class="container">
+      <div class="row section-header-row">
+        <div class="col-md-12">
+          <div class="section-heading mt-0" class="custom-section-heading">
+            <h2>Nuestro Equipo</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles de Filtros del Equipo -->
+      <div class="row mb-4">
+        <div class="col-md-12 text-center" id="members-filter-container">
+        </div>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Profile 2 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="-ToYoTa-">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">¿Nombre<br>Apellido?</p>
+                  <p class="bio-data">00/00/0000<br>(00 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ar.png" alt="Argentina"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">-ToYoTa-</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Profile 3 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="ADOLF1612">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">Adolfo<br>Miguel<br>Herrera<br>Troconiz</p>
+                  <p class="bio-data">00/00/0000<br>(00 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ve.png" alt="Venezuela"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">ADOLF1612</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Profile 4 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="Bruno(ARG)">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">¿Nombre<br>Apellido?</p>
+                  <p class="bio-data">00/00/0000<br>(00 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ar.png" alt="Argentina"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">Bruno(ARG)</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile 5 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="Leandrus">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">Gilberto<br>Jiménez</p>
+                  <p class="bio-data">28/02/1973<br>(53 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ve.png" alt="Venezuela"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">CA1MA1RO</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Profile 22 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="undergroundleo">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">David<br>Aponte</p>
+                  <p class="bio-data">00/00/0000<br>(00 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ve.png" alt="Venezuela"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">CHARGER VEN</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Profile 6 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="damiante">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">¿Nombre<br>Apellido?</p>
+                  <p class="bio-data">00/00/0000<br>(00 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ar.png" alt="Argentina"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">damiante</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Profile 7 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="doctor-z">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">¿Nombre<br>Apellido?</p>
+                  <p class="bio-data">00/00/0000<br>(00 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ar.png" alt="Argentina"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">doctor-z</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Profile 8 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="electri">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">¿Nombre<br>Apellido?</p>
+                  <p class="bio-data">00/00/0000<br>(00 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ar.png" alt="Argentina"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">electri</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Profile 9 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="FANGIO(ARG)">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">¿Nombre<br>Apellido?</p>
+                  <p class="bio-data">00/00/0000<br>(00 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ar.png" alt="Argentina"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">FANGIO(ARG)</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Profile 10 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="fechexx">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">¿Nombre<br>Apellido?</p>
+                  <p class="bio-data">00/00/0000<br>(00 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ar.png" alt="Argentina"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">fechexx</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Profile 11 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="Gabriel_87">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">Gabriel<br>Blanco</p>
+                  <p class="bio-data">00/00/0000<br>(00 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ar.png" alt="Argentina"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">Gabriel_87</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Profile 12 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="guilleracing">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">Guille<br>Elias</p>
+                  <p class="bio-data">00/00/0000<br>(00 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ar.png" alt="Argentina"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">guilleracing</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Profile 13 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="kapone101">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">¿Nombre<br>Apellido?</p>
+                  <p class="bio-data">00/00/0000<br>(00 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ar.png" alt="Argentina"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">kapone101</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Profile 1 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-active">Activo</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="Leandrus">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">Leandro<br>Da Silva</p>
+                  <p class="bio-data">05/03/1980<br>(46 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ve.png" alt="Venezuela"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">Leandrus</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Profile 14 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="lijita">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">¿Nombre<br>Apellido?</p>
+                  <p class="bio-data">00/00/0000<br>(00 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ar.png" alt="Argentina"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">lijita</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Profile 15 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="Loko VEN">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">Francisco<br>Hernández</p>
+                  <p class="bio-data">00/00/0000<br>(00 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ve.png" alt="Venezuela"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">Loko VEN</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Profile 16 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="matyav">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">¿Nombre<br>Apellido?</p>
+                  <p class="bio-data">00/00/0000<br>(00 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ar.png" alt="Argentina"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">matyav</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Profile 17 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="Nes78">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">Nestor<br>Prepotente</p>
+                  <p class="bio-data">00/00/0000<br>(00 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ar.png" alt="Argentina"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">Nes78</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Profile 18 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="Ozzie">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">¿Nombre<br>Apellido?</p>
+                  <p class="bio-data">00/00/0000<br>(00 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ar.png" alt="Argentina"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">Ozzie</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Profile 19 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="Sebastian JP">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">¿Nombre<br>Apellido?</p>
+                  <p class="bio-data">00/00/0000<br>(00 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ar.png" alt="Argentina"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">Sebastian JP</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Profile 20 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="sokabaru">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">¿Nombre<br>Apellido?</p>
+                  <p class="bio-data">00/00/0000<br>(00 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ve.png" alt="Venezuela"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">sokabaru</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Profile 21 -->
+        <div class="col-lg-3 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="pilot-status stat-retired">Retirado</div>
+            <div class="team-body">
+              <div class="team-before">
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="Facebook" target=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="javascript:void(0);" title="Instagram" target=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href="javascript:void(0);" title="Twitter / X" target=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="social-links mb-2">
+                  <a href="javascript:void(0);" title="YouTube" target=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href="javascript:void(0);" title="Twitch" target=""><i class="fa-brands fa-twitch"></i></a>
+                  <a href="javascript:void(0);" title="Kick" target=""><i class="fa-brands fa-kickstarter-k"></i></a>
+                </div>
+              </div>
+              <img class="img-fluid w-100" src="assets/images/members/no_picture.jpeg" alt="undergroundleo">
+              <div class="team-after">
+                <div class="pilot-info-top">
+                  <p class="real-name">Leonardo<br>Calderon</p>
+                  <p class="bio-data">00/00/0000<br>(00 años)</p>
+                  <p class="bio-data"><img src="https://flagcdn.com/96x72/ve.png" alt="Venezuela"></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <div class="team-name">
+                <h5 class="text-uppercase mb-0 text-white">undergroundleo</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- ***** Team Members Profiles End ***** -->
+
+  <!-- ***** Partners/Sponsors ***** -->
+  <section class="section partners" data-section="section4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading mt-0" class="custom-section-heading">
+            <h2>Patrocinadores</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="owl-carousel owl-theme partners-carousel">
+            <div class="item" data-sponsor-id="sponsor1">
+              <img src="assets/images/sponsors/sponsor_250x100_aceleracion_virtual.png" alt="Aceleración Virtual">
+            </div>
+            <div class="item" data-sponsor-id="sponsor2">
+              <img src="assets/images/sponsors/sponsor_250x100_lyraia.png" alt="LYRAIA">
+            </div>
+            <div class="item" data-sponsor-id="sponsor3">
+              <img src="assets/images/sponsors/sponsor_250x100_qbrfit.png" alt="QBR Fit">
+            </div>
+            <div class="item" data-sponsor-id="sponsor4">
+              <img src="assets/images/sponsors/sponsor_250x100_iracing.png" alt="iRacing">
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row sponsor-info-row">
+        <div class="col-md-10 offset-md-1" class="sponsor-info-panel">
+          <div id="sponsor-info" class="sponsor-info-container text-center">
+            <!-- Dynamically populated info -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hidden data source for sponsors information -->
+    <div id="sponsors-data" class="d-none">
+      <div id="sponsor1" data-title="Aceleración Virtual"
+        data-img="assets/images/sponsors/sponsor_800x400_aceleracion_virtual.png">
+        <p>Potencia tu marca con Aceleración Virtual. Expertos en crear experiencias inmersivas y activaciones de alto
+          impacto mediante simracing profesional. Desde eventos presenciales hasta branding personalizado en pista:
+          conectamos tu empresa con la pasión del motorsport virtual. ¡Acelera tus resultados!</p>
+        <p><a href="https://aceleracionvirtual.com/" target="_blank"><i class="fa-solid fa-globe"></i></a>&nbsp;
+          <a href="https://www.facebook.com/aceleracionvirtual/" target="_blank"><i
+              class="fa-brands fa-facebook-f"></i></a>&nbsp;
+          <a href="https://www.instagram.com/aceleracion_virtual/" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>&nbsp;
+          <a href="https://www.tiktok.com/@aceleracion_virtual" target="_blank"><i
+              class="fa-brands fa-tiktok"></i></a>&nbsp;
+        </p>
+      </div>
+      <div id="sponsor2" data-title="LYRAIA" data-img="assets/images/sponsors/sponsor_800x400_lyraia.png">
+        <p>¿Demasiado tiempo en el cockpit? Recupera puntos con tu novia o esposa fuera de la pista con Lyraia Store.
+          Descubre nuestra colección exclusiva de joyería y accesorios artesanales con diseños únicos. El detalle
+          perfecto para regalar tras cruzar la bandera a cuadros. ¡Visítanos!</p>
+        <p>
+          <a href="https://www.facebook.com/profile.php?id=61579317422870" target="_blank"><i
+              class="fa-brands fa-facebook-f"></i></a>&nbsp;
+          <a href="https://www.instagram.com/lyraia.store" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>&nbsp;
+          <a href="https://www.tiktok.com/@lyraia.store" target="_blank"><i class="fa-brands fa-tiktok"></i></a>&nbsp;
+        </p>
+      </div>
+      <div id="sponsor3" data-title="QBR Fit" data-img="assets/images/sponsors/sponsor_800x400_qbrfit.png">
+        <p>¿Fatiga en las últimas vueltas? Maximiza tu rendimiento con QBR Fit. Ofrecemos entrenamiento funcional y
+          acondicionamiento físico especializado para pilotos que buscan resistencia, fuerza y concentración. Prepárate
+          físicamente para dominar la pista y evitar lesiones. ¡Entrena como un verdadero profesional!</p>
+        <p>
+          <a href="https://www.instagram.com/qbrfit/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </p>
+      </div>
+      <div id="sponsor4" data-title="iRacing" data-img="assets/images/sponsors/sponsor_800x400_iracing.png">
+        <p>Siente la verdadera adrenalina del motorsport con iRacing. Compite en el simulador líder con circuitos
+          escaneados por láser y licencias oficiales. Únete a la mayor comunidad competitiva del mundo y forja hoy tu
+          carrera profesional online. ¡La meta te espera!</p>
+        <p><a href="https://iracing.com/" target="_blank"><i class="fa-solid fa-globe"></i></a>&nbsp;
+          <a href="https://x.com/iRacing" target="_blank"><i class="fa-brands fa-twitter"></i></a>&nbsp;
+          <a href="https://www.instagram.com/iracingofficial/" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>&nbsp;
+          <a href="https://www.facebook.com/iracing" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>&nbsp;
+          <a href="https://www.youtube.com/user/iRacingTV" target="_blank"><i
+              class="fa-brands fa-youtube"></i></a>&nbsp;
+          <a href="https://www.twitch.tv/iracing" target="_blank"><i class="fa-brands fa-twitch"></i></a>&nbsp;
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <!-- ***** Partners/Sponsors - END ***** -->
+
+  <!-- ***** Contact/Socials ***** -->
+  <section class="section contact" data-section="section5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading mt-0" class="custom-section-heading">
+            <h2>Contacto</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <!-- Contact Cards -->
+        <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="contact-card">
+            <div class="icon"><i class="fa-solid fa-briefcase"></i></div>
+            <h4>Posibles Patrocinantes</h4>
+            <p>¿Quieres llevar tu marca a la velocidad de la luz? Únete como patrocinador oficial y llega a miles de
+              fans del simracing.</p>
+            <div class="main-button"><a href="mailto:sponsors@last.aceleracionvirtual.com">Contactar Comercial</a></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="contact-card">
+            <div class="icon"><i class="fa-solid fa-helmet-un"></i></div>
+            <h4>Sumate al Equipo</h4>
+            <p>¿Sientes que tienes el nivel y la dedicación para ser parte de Team LAST? Demuestra tu talento en pista y
+              forma parte del roster.</p>
+            <div class="main-button"><a href="mailto:reclutamiento@last.aceleracionvirtual.com">Aplicar Ahora</a></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="contact-card">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <h4>Consultas Generales</h4>
+            <p>Para preguntas generales acerca del equipo, eventos, transmisiones, la comunidad u otras inquietudes.</p>
+            <div class="main-button"><a href="mailto:info@last.aceleracionvirtual.com">Escríbenos</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Contact/Socials ***** -->
+  <section class="section socials" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading mt-0" class="custom-section-heading-social">
+            <h2>Redes Sociales</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="social-networks-container text-center mt-0">
+            <h3>Síguenos</h3>
+            <p>Entérate de las últimas noticias, lanzamientos y contenido exclusivo de la comunidad.</p>
+            <div class="social-grid mb-4">
+              <a href="javascript:void(0);" target="" title="Facebook" class="social-btn facebook"><i
+                  class="fa-brands fa-facebook-f"></i></a>
+              <a href="javascript:void(0);" target="" title="Instagram" class="social-btn instagram"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="javascript:void(0);" target="" title="Twitter / X" class="social-btn twitter"><i
+                  class="fa-brands fa-twitter"></i></a>
+              <a href="javascript:void(0);" target="" title="YouTube" class="social-btn youtube"><i
+                  class="fa-brands fa-youtube"></i></a>
+            </div>
+            <h3>Únete en vivo</h3>
+            <p>No te pierdas la acción. Únete a nuestros streamings, participa en el chat y vive la experiencia en
+              directo.</p>
+            <div class="social-grid">
+              <a href="javascript:void(0);" target="" title="Twitch" class="social-btn twitch"><i
+                  class="fa-brands fa-twitch"></i></a>
+              <a href="javascript:void(0);" target="" title="TikTok" class="social-btn tiktok"><i
+                  class="fa-brands fa-tiktok"></i></a>
+              <a href="javascript:void(0);" target="" title="Kick" class="social-btn kick"><i
+                  class="fa-brands fa-kickstarter-k"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Contact/Socials - END ***** -->
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p><i class="fa fa-copyright"></i> Copyright 2026 by LAST<br>Desarrollado por <a
+              href="https://aceleracionvirtual.com" target="_blank">Aceleración Virtual</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/page-nav.js"></script>
+  <script src="assets/js/members-filter.js"></script>
+</body>
+
+</html>

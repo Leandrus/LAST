@@ -1,0 +1,76 @@
+/**
+ * page-nav.js
+ * 
+ * Gestiona la navegación de la página principal (index.html), incluyendo:
+ * - El desplazamiento animado (smooth scrolling) entre secciones.
+ * - La actualización activa del enlace de navegación basado en la posición del scroll visible (IntersectionObserver/scroll offsets).
+ * - La visibilidad del logotipo secundario en el menú fijo, ocultándolo cuando el logo principal es visible.
+ */
+// Page navigation logic for index.html
+
+$('.nav li:first').addClass('active');
+
+var showSection = function showSection(section, isAnimate) {
+  var
+    direction = section.replace(/#/, ''),
+    reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+    reqSectionPos = reqSection.offset().top - 0;
+
+  if (isAnimate) {
+    $('body, html').animate({
+      scrollTop: reqSectionPos
+    },
+      800);
+  } else {
+    $('body, html').scrollTop(reqSectionPos);
+  }
+
+};
+
+var checkSection = function checkSection() {
+  $('.section').each(function () {
+    var
+      $this = $(this),
+      topEdge = $this.offset().top - 80,
+      bottomEdge = topEdge + $this.height(),
+      wScroll = $(window).scrollTop();
+    if (topEdge < wScroll && bottomEdge > wScroll) {
+      var
+        currentId = $this.data('section'),
+        reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+      reqLink.closest('li').addClass('active').
+        siblings().removeClass('active');
+    }
+  });
+};
+
+$('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+  if ($(e.target).hasClass('external')) {
+    return;
+  }
+  e.preventDefault();
+  $('#menu').removeClass('active');
+  showSection($(this).attr('href'), true);
+});
+
+$(window).scroll(function () {
+  checkSection();
+});
+
+// Header logo visibility toggle
+$(document).ready(function() {
+  var headerLogo = $('.header-logo');
+  var mainLogo = $('.main-logo')[0]; 
+  
+  if (mainLogo && headerLogo.length > 0) {
+    var observer = new IntersectionObserver(function(entries) {
+      if(entries[0].isIntersecting) {
+        headerLogo.removeClass('show-logo');
+      } else {
+        headerLogo.addClass('show-logo');
+      }
+    }, { threshold: [0] });
+    
+    observer.observe(mainLogo);
+  }
+});
