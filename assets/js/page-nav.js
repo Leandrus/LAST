@@ -1,3 +1,11 @@
+/**
+ * page-nav.js
+ * 
+ * Gestiona la navegación de la página principal (index.html), incluyendo:
+ * - El desplazamiento animado (smooth scrolling) entre secciones.
+ * - La actualización activa del enlace de navegación basado en la posición del scroll visible (IntersectionObserver/scroll offsets).
+ * - La visibilidad del logotipo secundario en el menú fijo, ocultándolo cuando el logo principal es visible.
+ */
 // Page navigation logic for index.html
 
 $('.nav li:first').addClass('active');

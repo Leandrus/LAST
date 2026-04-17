@@ -1,3 +1,11 @@
+/**
+ * members-filter.js
+ * 
+ * Gestiona el sistema de filtrado de los perfiles dinámicos de los pilotos del equipo:
+ * - Lee la nacionalidad y estado (Activo/Retirado) del DOM de forma dinámica.
+ * - Genera botones de filtro según los datos detectados.
+ * - Aplica filtrado animado de los miembros mostrados en la grilla sin depender de librerías de terceros (Vanilla JS + jQuery simple).
+ */
 // Filtrado de Miembros del Equipo
 $(document).ready(function () {
   var $members = $('.team-item').parent('.col-lg-3');
@@ -27,44 +35,8 @@ $(document).ready(function () {
     }
   });
 
-  // Inyectar CSS para botones
-  var styleHtml = `
-    <style>
-      .filter-btn {
-        border-color: rgba(250, 250, 250, 0.2);
-        margin: 2px;
-        border-radius: 4px;
-        color: #fff;
-        background: transparent;
-        transition: all 0.3s ease;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-      }
-      .filter-btn:hover {
-        background-color: var(--brand-blue);
-        border-color: var(--brand-orange);
-        color: var(--brand-orange);
-      }
-      .filter-btn.filter-active {
-        background-color: var(--brand-orange) !important;
-        border-color: var(--brand-orange) !important;
-        color: #fff !important;
-      }
-      .status-btn {
-        min-width: 80px; /* Asegurar ancho igual para los 3 de estado */
-      }
-      .flag-icon {
-        width: 24px;
-        height: auto;
-        border-radius: 2px;
-      }
-    </style>
-  `;
-
   // Generar HTML para los filtros
-  var filterHtml = styleHtml + `
+  var filterHtml = `
     <div class="filter-controls">
       <div class="btn-group mb-3" role="group" aria-label="Status Filter">
         <button type="button" class="btn btn-outline-light filter-active filter-btn status-btn" data-filter-type="status" data-filter-value="Todos">Todos</button>

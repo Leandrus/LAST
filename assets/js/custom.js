@@ -1,3 +1,12 @@
+/**
+ * custom.js
+ * 
+ * Contiene scripts personalizados generales del proyecto, incluyendo:
+ * - Menú responsive móvil (alternar visibilidad del menú).
+ * - Animaciones hover en tarjetas (Sección Simuladores).
+ * - Inicialización dinámica de carrusel de socios (Owl Carousel).
+ * - Actualización y control del panel de información dinámico de patrocinadores según el elemento iterado por el carrusel.
+ */
 (function ($) {
 
 	$(document).ready(function () {
@@ -13,10 +22,6 @@
 	});
 
 
-	videoPopup();
-
-
-	// Old carousels have been removed
 
 	function updateSponsorInfo() {
 		setTimeout(function () {
@@ -35,8 +40,8 @@
 								<img src="' + img + '" alt="' + title + '" class="img-fluid" >\
 							</div>\
 							<div class="col-md-7 text-left">\
-								<h3 style="color:var(--brand-orange); font-size:24px; font-weight:700; margin-bottom:15px;text-align:left;">' + title + '</h3>\
-								<div class="sponsor-desc" style="color:#ddd; font-size:15px; line-height:1.6; text-align:left;">' + htmlText + '</div>\
+								<h3 class="sponsor-title-text">' + title + '</h3>\
+								<div class="sponsor-desc sponsor-desc-text">' + htmlText + '</div>\
 							</div>\
 						</div>';
 
@@ -96,23 +101,6 @@
 	});
 
 
-	$(".Modern-Slider").slick({
-		autoplay: true,
-		autoplaySpeed: 10000,
-		speed: 600,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		pauseOnHover: false,
-		dots: true,
-		pauseOnDotsHover: true,
-		cssEase: 'fade',
-		// fade:true,
-		draggable: false,
-		prevArrow: '<button class="PrevArrow">Atrasss</button>',
-		nextArrow: '<button class="NextArrow">Siiigui</button>',
-	});
-
-
 	$("div.features-post").hover(
 		function () {
 			$(this).find("div.content-hide").slideToggle("medium");
@@ -123,38 +111,5 @@
 	);
 
 
-	$("#tabs").tabs();
-
-
-	(function init() {
-		function getTimeRemaining(endtime) {
-			var t = Date.parse(endtime) - Date.parse(new Date());
-			var seconds = Math.floor((t / 1000) % 60);
-			var minutes = Math.floor((t / 1000 / 60) % 60);
-			var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-			var days = Math.floor(t / (1000 * 60 * 60 * 24));
-			return {
-				'total': t,
-				'days': days,
-				'hours': hours,
-				'minutes': minutes,
-				'seconds': seconds
-			};
-		}
-
-		function initializeClock(endtime) {
-			var timeinterval = setInterval(function () {
-				var t = getTimeRemaining(endtime);
-				document.querySelector(".days > .value").innerText = t.days;
-				document.querySelector(".hours > .value").innerText = t.hours;
-				document.querySelector(".minutes > .value").innerText = t.minutes;
-				document.querySelector(".seconds > .value").innerText = t.seconds;
-				if (t.total <= 0) {
-					clearInterval(timeinterval);
-				}
-			}, 1000);
-		}
-		initializeClock(((new Date()).getFullYear() + 1) + "/1/1")
-	})()
 
 })(jQuery);

@@ -1,5 +1,12 @@
+/* ============================================================== 
+   Team LAST - Hoja de Estilos Principal
+   ============================================================== 
+   Basado en la plantilla original 'Grad School', refactorizada
+   para ajustarse a las necesidades e identidad de marca de LAST.
+   Todos los estilos en linea del HTML han sido consolidados aqui.
+   ============================================================== */
 :root {
-  --bg-dark: #0A0A0A;
+  --bg-dark: #000000;
   --surface-glass: rgba(26, 26, 26, 0.7);
   --brand-orange: #E67817;
   --brand-blue: #09488f;
@@ -2472,4 +2479,80 @@ section.socials {
     background: rgba(0, 0, 0, 0.75);
     border: 1px solid rgba(250, 250, 250, 0.5);
   }
+}
+
+/* --- Extra Team LAST Styles extracted from inline elements --- */
+.section-header-row {
+  margin-top: 5px;
+}
+
+.custom-section-heading {
+  margin-bottom: 50px;
+  border-bottom: 2px solid rgba(250, 250, 250, 0.1);
+}
+
+.custom-section-heading-social {
+  margin-bottom: 0px;
+  border-bottom: 2px solid rgba(250, 250, 250, 0.1);
+}
+
+.sponsor-info-row {
+  margin-top: 10px;
+}
+
+.sponsor-info-panel {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  padding: 40px;
+  border: 1px solid rgba(250, 250, 250, 0.5);
+}
+
+.sponsor-title-text {
+  color: var(--brand-orange);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.sponsor-desc-text {
+  color: #ddd;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.filter-btn {
+  border-color: rgba(250, 250, 250, 0.2);
+  margin: 2px;
+  border-radius: 4px;
+  color: #fff;
+  background: transparent;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.filter-btn:hover {
+  background-color: var(--brand-blue);
+  border-color: var(--brand-orange);
+  color: var(--brand-orange);
+}
+
+.filter-btn.filter-active {
+  background-color: var(--brand-orange) !important;
+  border-color: var(--brand-orange) !important;
+  color: #fff !important;
+}
+
+.status-btn {
+  min-width: 80px;
+}
+
+.flag-icon {
+  width: 24px;
+  height: auto;
+  border-radius: 2px;
 }
