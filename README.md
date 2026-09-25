@@ -1,10 +1,12 @@
 # LAST : Latin American Simracing Team 🏁
 
 [![Website](https://img.shields.io/badge/Website-last.leandrus.net-E67817?style=flat-square&logo=google-chrome&logoColor=white)](https://last.leandrus.net)
+[![Developer](https://img.shields.io/badge/Developer-Leandrus-E67817?style=flat-square&logo=github&logoColor=white)](https://av.leandrus.net)
+[![Brand](https://img.shields.io/badge/Initiative-Automovilismo%20Virtual-09488f?style=flat-square)](https://av.leandrus.net)
 [![Simulators](https://img.shields.io/badge/Simulators-LFS%20%7C%20Assetto%20Corsa%20%7C%20iRacing-09488f?style=flat-square)](https://last.leandrus.net)
 [![License](https://img.shields.io/badge/License-Proprietary-gray?style=flat-square)](LICENSE)
 
-Official website and digital hub for **Team LAST (Latin American Simracing Team)**. Born on the virtual asphalt of *Live For Speed (LFS)* and competing across top simracing titles like *Assetto Corsa* and *iRacing*, Team LAST brings together passionate simracers from across Latin America.
+Official website and digital hub for **Team LAST (Latin American Simracing Team)**, developed and maintained by **Leandrus** as part of the **Automovilismo Virtual** motorsport initiative ([av.leandrus.net](https://av.leandrus.net)). Born on the virtual asphalt of *Live For Speed (LFS)* and competing across top simracing titles like *Assetto Corsa* and *iRacing*, Team LAST brings together passionate simracers from across Latin America.
 
 ---
 
@@ -152,10 +154,12 @@ The repository is configured for automated deployment with **GitHub Pages**:
 
 ---
 
-## 🤝 Credits & Acknowledgements
+## 👨‍💻 Author & Credits
 
+- **Leandrus**: Creator, lead developer, and designer of the project ([av.leandrus.net](https://av.leandrus.net) &bull; [info@leandrus.net](mailto:info@leandrus.net)).
+- **Automovilismo Virtual**: Digital motorsport group and community brand developed by Leandrus ([av.leandrus.net](https://av.leandrus.net)).
+- **Contact & Inquiries**: [info@leandrus.net](mailto:info@leandrus.net)
 - **Team LAST**: Passionate community of Latin American simracers.
-- **Aceleración Virtual**: Development, hosting, and motorsport community management ([aceleracionvirtual.com](https://aceleracionvirtual.com)).
 - **Simulators**:
   - [Live For Speed (LFS)](https://www.lfs.net/)
   - [Assetto Corsa](https://assettocorsa.gg/)
@@ -163,4 +167,4 @@ The repository is configured for automated deployment with **GitHub Pages**:
 
 ---
 
-© 2026 Team LAST. All rights reserved.
+Developed with ❤️ by **[Leandrus](https://av.leandrus.net)** &bull; © 2026 Team LAST / Automovilismo Virtual. All rights reserved.

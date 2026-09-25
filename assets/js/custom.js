@@ -1,5 +1,6 @@
 /**
  * @file custom.js
+ * @author Leandrus (Automovilismo Virtual - https://av.leandrus.net)
  * @description General custom scripts for the Team LAST website, including:
  * - Mobile responsive navigation menu toggling.
  * - Dynamic sponsor spotlight panel synchronized with Owl Carousel.

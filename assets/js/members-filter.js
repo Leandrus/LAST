@@ -1,5 +1,6 @@
 /**
  * @file members-filter.js
+ * @author Leandrus (Automovilismo Virtual - https://av.leandrus.net)
  * @description Manages the dynamic filtering system for team driver profiles:
  * - Scans member DOM nodes to extract nationality and activity status (Active vs. Retired/Inactive).
  * - Dynamically constructs interactive filter button groups with live count indicators and country flags.

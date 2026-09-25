@@ -1,5 +1,6 @@
 /**
  * @file page-nav.js
+ * @author Leandrus (Automovilismo Virtual - https://av.leandrus.net)
  * @description Manages single-page navigation and scroll behavior for index.html:
  * - Smooth animated scrolling between landing page sections.
  * - Dynamic scrollspy functionality highlighting the current active navigation item.
