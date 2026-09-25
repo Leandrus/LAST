@@ -156,7 +156,7 @@ The repository is configured for automated deployment with **GitHub Pages**:
 
 ## 👨‍💻 Author & Credits
 
-- **Leandrus**: Creator, lead developer, and designer of the project ([av.leandrus.net](https://av.leandrus.net) &bull; [info@leandrus.net](mailto:info@leandrus.net)).
+- **Leandrus**: Creator, lead developer, and designer of the project ([leandrus.net](https://leandrus.net) &bull; [info@leandrus.net](mailto:info@leandrus.net)).
 - **Automovilismo Virtual**: Digital motorsport group and community brand developed by Leandrus ([av.leandrus.net](https://av.leandrus.net)).
 - **Contact & Inquiries**: [info@leandrus.net](mailto:info@leandrus.net)
 - **Team LAST**: Passionate community of Latin American simracers.
@@ -167,4 +167,4 @@ The repository is configured for automated deployment with **GitHub Pages**:
 
 ---
 
-Developed with ❤️ by **[Leandrus](https://av.leandrus.net)** &bull; © 2026 Team LAST / Automovilismo Virtual. All rights reserved.
+Developed with ❤️ by **[Leandrus](https://leandrus.net)** &bull; © 2026 Team LAST / Automovilismo Virtual. All rights reserved.
