@@ -1,19 +1,21 @@
 /**
- * custom.js
- * 
- * Contiene scripts personalizados generales del proyecto, incluyendo:
- * - Menú responsive móvil (alternar visibilidad del menú).
- * - Animaciones hover en tarjetas (Sección Simuladores).
- * - Inicialización dinámica de carrusel de socios (Owl Carousel).
- * - Actualización y control del panel de información dinámico de patrocinadores según el elemento iterado por el carrusel.
+ * @file custom.js
+ * @description General custom scripts for the Team LAST website, including:
+ * - Mobile responsive navigation menu toggling.
+ * - Dynamic sponsor spotlight panel synchronized with Owl Carousel.
+ * - Interactive click-to-center functionality for carousel items.
+ * - Simulator feature card hover animations.
  */
 (function ($) {
 
 	$(document).ready(function () {
+		// Enable JS styling flag on the body
 		$('body').addClass('js');
+
 		var $menu = $('#menu'),
 			$menulink = $('.menu-link');
 
+		// Toggle mobile navigation menu visibility
 		$menulink.click(function () {
 			$menulink.toggleClass('active');
 			$menu.toggleClass('active');
@@ -21,8 +23,11 @@
 		});
 	});
 
-
-
+	/**
+	 * Synchronizes the sponsor spotlight section with the active center item of the Owl Carousel.
+	 * Reads metadata attributes (data-sponsor-id, data-title, data-img) and the description HTML
+	 * from the hidden sponsor repository, then smoothly transitions the display container.
+	 */
 	function updateSponsorInfo() {
 		setTimeout(function () {
 			var $center = $('.partners-carousel').find('.owl-item.active.center .item');
@@ -46,6 +51,7 @@
 						</div>';
 
 					var $infoContainer = $('#sponsor-info');
+					// Only update and animate if the active sponsor has changed
 					if ($infoContainer.html().indexOf(title) === -1) {
 						$infoContainer.fadeOut(200, function () {
 							$(this).html(outputHTML).fadeIn(200);
@@ -58,8 +64,10 @@
 
 	var $partnersCarousel = $('.partners-carousel');
 
+	// Bind carousel lifecycle events to keep the spotlight details updated
 	$partnersCarousel.on('initialized.owl.carousel changed.owl.carousel translated.owl.carousel', updateSponsorInfo);
 
+	// Initialize Owl Carousel for sponsor logos with continuous loop and center mode
 	$partnersCarousel.owlCarousel({
 		center: true,
 		loop: true,
@@ -76,7 +84,7 @@
 		}
 	});
 
-	// Permitir hacer clic en los patrocinadores para centrarlos
+	// Allow clicking on any sponsor item to navigate and center it in the carousel
 	$partnersCarousel.on('click', '.owl-item', function () {
 		var $item = $(this).find('.item');
 		var targetSponsorId = $item.data('sponsor-id');
@@ -95,12 +103,12 @@
 		}
 	});
 
-	// Mostrar un cursor de puntero para indicar interactividad
-	$partnersCarousel.on('mouseenter', '.owl-item', function() {
+	// Change mouse cursor to pointer on carousel items to indicate clickability
+	$partnersCarousel.on('mouseenter', '.owl-item', function () {
 		$(this).css('cursor', 'pointer');
 	});
 
-
+	// Toggle hidden content visibility on hover for simulator feature cards
 	$("div.features-post").hover(
 		function () {
 			$(this).find("div.content-hide").slideToggle("medium");
@@ -109,7 +117,5 @@
 			$(this).find("div.content-hide").slideToggle("medium");
 		}
 	);
-
-
 
 })(jQuery);

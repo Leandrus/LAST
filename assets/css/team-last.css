@@ -1,9 +1,10 @@
 /* ============================================================== 
-   Team LAST - Hoja de Estilos Principal
+   Team LAST - Main Stylesheet
    ============================================================== 
-   Basado en la plantilla original 'Grad School', refactorizada
-   para ajustarse a las necesidades e identidad de marca de LAST.
-   Todos los estilos en linea del HTML han sido consolidados aqui.
+   Originally based on the 'Grad School' template, refactored and
+   enhanced to align with Team LAST's visual brand identity.
+   Consolidates CSS custom variables, glassmorphic UI components,
+   responsive grid layouts, and page section styles.
    ============================================================== */
 :root {
   --bg-dark: #000000;
@@ -653,7 +654,7 @@ section.why-us {
 }
 
 #tabs ul .ui-tabs-active {
-  /*borrar*/
+  /* Temporary test style */
   color: fuchsia;
 }
 

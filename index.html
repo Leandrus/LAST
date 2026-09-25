@@ -2,14 +2,14 @@
   =============================================================
   LAST : Latin American Simracing Team - Official Website
   =============================================================
-  Estructura General:
-  - Header & Navegación (Sticky y animado)
-  - Banner Principal (Video en background)
-  - Area de Simuladores (Destacados LFS, AC, iRacing)
-  - Historia (Legado y nueva era)
-  - Miembros del Equipo (Grilla dinámica filtrable)
-  - Patrocinadores / Partners (Carrusel interactivo y paneles dinámicos)
-  - Contacto y Redes (Accesos rápidos orientados)
+  General Architecture:
+  - Header & Navigation (Sticky bar with responsive mobile drawer & scrollspy)
+  - Hero Banner (High-definition background video with call to action)
+  - Simulators Section (Featured platforms: LFS, Assetto Corsa, iRacing)
+  - Team History (Legacy, milestones, and competitive achievements)
+  - Team Roster (Dynamic driver grid with dual-axis nationality & status filters)
+  - Partners & Sponsors (Interactive Owl Carousel with synchronized spotlight panel)
+  - Contact & Socials (Direct contact channels and social networks)
   =============================================================
 -->
 <!DOCTYPE html>
@@ -39,15 +39,16 @@
 </head>
 
 <body>
-  <!--header-->
+  <!-- ***** Header Navigation ***** -->
   <header class="main-header removed_clearfix" role="header">
-    <!-- Logo top izquierdo del menu -->
+    <!-- Top-left header logo (revealed on scroll via IntersectionObserver) -->
     <div class="logo header-logo hidden">
       <a href="#"><img src="assets/images/logo_last.png" width="auto" height="60px" alt="LAST"></a>
-    </div> <!-- Menu for mobile -->
+    </div>
+    <!-- Mobile hamburger menu toggle button -->
     <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
 
-    <!--Menu for desktop -->
+    <!-- Navigation menu for desktop and expandable mobile drawer -->
     <nav id="menu" class="main-nav" role="navigation">
       <ul class="main-menu">
         <li><a href="#section1">Inicio</a></li>
@@ -210,7 +211,7 @@
         </div>
       </div>
 
-      <!-- Controles de Filtros del Equipo -->
+      <!-- Dynamic Team Roster Filter Controls (populated by members-filter.js) -->
       <div class="row mb-4">
         <div class="col-md-12 text-center" id="members-filter-container">
         </div>
@@ -990,13 +991,13 @@
       <div class="row sponsor-info-row">
         <div class="col-md-10 offset-md-1" class="sponsor-info-panel">
           <div id="sponsor-info" class="sponsor-info-container text-center">
-            <!-- Dynamically populated info -->
+            <!-- Dynamically populated sponsor spotlight info container -->
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Hidden data source for sponsors information -->
+    <!-- Hidden data source repository for sponsors spotlight information -->
     <div id="sponsors-data" class="d-none">
       <div id="sponsor1" data-title="Aceleración Virtual"
         data-img="assets/images/sponsors/sponsor_800x400_aceleracion_virtual.png">
@@ -1051,7 +1052,7 @@
   </section>
   <!-- ***** Partners/Sponsors - END ***** -->
 
-  <!-- ***** Contact/Socials ***** -->
+  <!-- ***** Contact Channels Area ***** -->
   <section class="section contact" data-section="section5">
     <div class="container">
       <div class="row">
@@ -1063,7 +1064,7 @@
       </div>
 
       <div class="row mb-5">
-        <!-- Contact Cards -->
+        <!-- Direct Contact Cards -->
         <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="0.1s">
           <div class="contact-card">
             <div class="icon"><i class="fa-solid fa-briefcase"></i></div>
@@ -1095,8 +1096,9 @@
       </div>
     </div>
   </section>
+  <!-- ***** Contact Channels Area - END ***** -->
 
-  <!-- ***** Contact/Socials ***** -->
+  <!-- ***** Social Networks & Streaming Area ***** -->
   <section class="section socials" data-section="section6">
     <div class="container">
       <div class="row">
@@ -1137,7 +1139,7 @@
       </div>
     </div>
   </section>
-  <!-- ***** Contact/Socials - END ***** -->
+  <!-- ***** Social Networks & Streaming Area - END ***** -->
 
   <footer>
     <div class="container">
@@ -1150,11 +1152,13 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
+  <!-- ***** Scripts & Core Dependencies ***** -->
+  <!-- Vendor Libraries -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
+
+  <!-- Custom Project Modules -->
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/page-nav.js"></script>
   <script src="assets/js/members-filter.js"></script>

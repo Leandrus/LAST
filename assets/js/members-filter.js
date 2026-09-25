@@ -1,28 +1,29 @@
 /**
- * members-filter.js
- * 
- * Gestiona el sistema de filtrado de los perfiles dinámicos de los pilotos del equipo:
- * - Lee la nacionalidad y estado (Activo/Retirado) del DOM de forma dinámica.
- * - Genera botones de filtro según los datos detectados.
- * - Aplica filtrado animado de los miembros mostrados en la grilla sin depender de librerías de terceros (Vanilla JS + jQuery simple).
+ * @file members-filter.js
+ * @description Manages the dynamic filtering system for team driver profiles:
+ * - Scans member DOM nodes to extract nationality and activity status (Active vs. Retired/Inactive).
+ * - Dynamically constructs interactive filter button groups with live count indicators and country flags.
+ * - Handles dual-axis filtering (Status + Nationality) with smooth fade animations.
  */
-// Filtrado de Miembros del Equipo
+
 $(document).ready(function () {
+  // Select all member card containers in the team roster
   var $members = $('.team-item').parent('.col-lg-3');
   var nationalities = {};
   var statusCounts = { 'Todos': 0, 'Activo': 0, 'Inactivo': 0 };
 
-  // Analizar cada miembro para obtener estado y nacionalidad
+  // Parse each member card to extract activity status and nationality metadata
   $members.each(function () {
     var $this = $(this);
     var isRetired = $this.find('.stat-retired').length > 0;
     var statusCat = isRetired ? 'Inactivo' : 'Activo';
 
-    // Agregar propiedades al elemento DOM para filtrado rapido
+    // Store attributes on jQuery data store for rapid filtering
     $this.data('status', statusCat);
     statusCounts['Todos']++;
     statusCounts[statusCat]++;
 
+    // Detect nationality from flag image alt/src attributes
     var $flagImg = $this.find('img[src*="flagcdn.com"]');
     if ($flagImg.length > 0) {
       var nat = $flagImg.attr('alt');
@@ -35,7 +36,7 @@ $(document).ready(function () {
     }
   });
 
-  // Generar HTML para los filtros
+  // Dynamically generate HTML control buttons for filtering
   var filterHtml = `
     <div class="filter-controls">
       <div class="btn-group mb-3" role="group" aria-label="Status Filter">
@@ -48,6 +49,7 @@ $(document).ready(function () {
         <button type="button" class="btn btn-outline-light filter-active filter-btn" data-filter-type="nat" data-filter-value="Todos">🌍</button>
   `;
 
+  // Append nationality filter buttons with respective country flags and member counts
   for (var nat in nationalities) {
     var data = nationalities[nat];
     filterHtml += `<button type="button" class="btn btn-outline-light filter-btn" data-filter-type="nat" data-filter-value="${nat}"><img src="${data.src}" class="flag-icon" alt="${nat}"> (${data.count})</button>`;
@@ -60,27 +62,28 @@ $(document).ready(function () {
 
   $('#members-filter-container').html(filterHtml);
 
-  // Logica de Filtrado
+  // Active filter state tracking
   var currentStatusFilter = 'Todos';
   var currentNatFilter = 'Todos';
 
+  // Handle filter button click events
   $('.filter-btn').on('click', function () {
     var $btn = $(this);
     var fType = $btn.data('filter-type');
     var fVal = $btn.data('filter-value');
 
-    // Actualizar UI del boton basado en su grupo
+    // Update active button visual state within its group
     $btn.siblings().removeClass('filter-active');
     $btn.addClass('filter-active');
 
-    // Actualizar variables de estado
+    // Update state filter criteria
     if (fType === 'status') {
       currentStatusFilter = fVal;
     } else if (fType === 'nat') {
       currentNatFilter = fVal;
     }
 
-    // Aplicar filtro
+    // Apply combined filter criteria with a smooth fade animation
     $members.hide().filter(function () {
       var $item = $(this);
       var itemStatus = $item.data('status');

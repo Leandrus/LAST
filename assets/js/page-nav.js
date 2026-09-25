@@ -1,15 +1,19 @@
 /**
- * page-nav.js
- * 
- * Gestiona la navegación de la página principal (index.html), incluyendo:
- * - El desplazamiento animado (smooth scrolling) entre secciones.
- * - La actualización activa del enlace de navegación basado en la posición del scroll visible (IntersectionObserver/scroll offsets).
- * - La visibilidad del logotipo secundario en el menú fijo, ocultándolo cuando el logo principal es visible.
+ * @file page-nav.js
+ * @description Manages single-page navigation and scroll behavior for index.html:
+ * - Smooth animated scrolling between landing page sections.
+ * - Dynamic scrollspy functionality highlighting the current active navigation item.
+ * - Header logo visibility toggling using IntersectionObserver based on hero logo position.
  */
-// Page navigation logic for index.html
 
+// Mark the first navigation item as active on initial load
 $('.nav li:first').addClass('active');
 
+/**
+ * Scrolls the viewport to the target section identified by section hash or data-section attribute.
+ * @param {string} section - Selector or hash identifying the target section (e.g., '#section2').
+ * @param {boolean} isAnimate - Whether to perform animated smooth scrolling (true) or instant jump (false).
+ */
 var showSection = function showSection(section, isAnimate) {
   var
     direction = section.replace(/#/, ''),
@@ -19,14 +23,16 @@ var showSection = function showSection(section, isAnimate) {
   if (isAnimate) {
     $('body, html').animate({
       scrollTop: reqSectionPos
-    },
-      800);
+    }, 800);
   } else {
     $('body, html').scrollTop(reqSectionPos);
   }
-
 };
 
+/**
+ * Checks the current scroll position against all sections on the page
+ * and updates the active CSS class on the corresponding navigation link.
+ */
 var checkSection = function checkSection() {
   $('.section').each(function () {
     var
@@ -44,6 +50,7 @@ var checkSection = function checkSection() {
   });
 };
 
+// Handle in-page smooth scroll clicks on navigation links
 $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
   if ($(e.target).hasClass('external')) {
     return;
@@ -53,24 +60,30 @@ $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
   showSection($(this).attr('href'), true);
 });
 
+// Update active navigation item on window scroll
 $(window).scroll(function () {
   checkSection();
 });
 
-// Header logo visibility toggle
-$(document).ready(function() {
+/**
+ * Header logo visibility controller:
+ * Uses IntersectionObserver to reveal the fixed navbar logo only when the
+ * main hero banner logo has scrolled out of the viewport.
+ */
+$(document).ready(function () {
   var headerLogo = $('.header-logo');
-  var mainLogo = $('.main-logo')[0]; 
-  
+  var mainLogo = $('.main-logo')[0];
+
   if (mainLogo && headerLogo.length > 0) {
-    var observer = new IntersectionObserver(function(entries) {
-      if(entries[0].isIntersecting) {
+    var observer = new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) {
         headerLogo.removeClass('show-logo');
       } else {
         headerLogo.addClass('show-logo');
       }
     }, { threshold: [0] });
-    
+
     observer.observe(mainLogo);
   }
 });
+
